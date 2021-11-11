@@ -12,6 +12,7 @@
   "scripts": {
     "backend" : "yarn common:watch & yarn start:backend",
     "web": "yarn common:watch & yarn start:app",
+    "common:build": "yarn workspace @monorepo/common build",
     "common:watch": "yarn workspace @monorepo/common build:watch",
     "build:app": "yarn workspace @monorepo/web build",
     "build:api": "yarn workspace @monorepo/nestjs build",
