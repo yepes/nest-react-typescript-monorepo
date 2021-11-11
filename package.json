@@ -1,0 +1,29 @@
+{
+  "name": "@monorepo/root",
+  "private": true,
+  "version": "1.0.0",
+  "description": "NEST + React monorepo",
+  "main": "index.js",
+  "workspaces": {
+    "packages": [
+      "workspaces/*"
+    ]
+  },
+  "scripts": {
+    "backend" : "yarn common:watch & yarn start:backend",
+    "web": "yarn common:watch & yarn start:app",
+    "common:watch": "yarn workspace @monorepo/common build:watch",
+    "build:app": "yarn workspace @monorepo/web build",
+    "build:api": "yarn workspace @monorepo/nestjs build",
+    "start:app": "yarn workspace @monorepo/web start",
+    "start:backend": "yarn workspace @monorepo/nestjs start:dev"
+  },
+  "keywords": [
+    "nestjs",
+    "react",
+    "monorepo",
+    "workspaces"
+  ],
+  "author": "jesus@goltratec.com",
+  "license": "ISC"
+}

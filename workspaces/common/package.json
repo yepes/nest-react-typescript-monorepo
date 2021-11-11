@@ -1,0 +1,24 @@
+{
+  "name": "@monorepo/common",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Common package for MonoRepo",
+  "main": "dist/index.js",
+
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "yarn",
+    "workspaces",
+    "monorepo"
+  ],
+  "dependencies": {
+    "class-validator": "^0.13.1",
+    "typescript": "^4.1.2"
+  },
+  "author": "nick@master-class.io",
+  "license": "ISC"
+}
