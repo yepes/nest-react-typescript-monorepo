@@ -2,7 +2,7 @@
   "name": "@monorepo/nestjs",
   "version": "1.0.0",
   "description": "MonoRepo for NestJs",
-  "author": "nick@master-class.io",
+  "author": "jesus@jesusyepes.com",
   "private": true,
   "license": "ISC",
   "scripts": {
@@ -21,6 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@monorepo/common": "1.0.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
@@ -30,7 +31,6 @@
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
-    "@monorepo/common": "1.0.0",
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/testing": "^8.0.0",
