@@ -8,8 +8,7 @@ import {
   Delete,
 } from '@nestjs/common';
 import { TodosService } from './todos.service';
-import { CreateTodoDto } from './dto/create-todo.dto';
-import { UpdateTodoDto } from './dto/update-todo.dto';
+import { CreateTodoDto, UpdateTodoDto } from '@monorepo/common';
 
 @Controller('todos')
 export class TodosController {

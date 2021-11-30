@@ -1,20 +1,20 @@
-import React from "react";
-import "./App.css";
-import { Contact, Phone } from "@monorepo/common";
-import { createValidator } from "class-validator-formik";
-import { validate } from "class-validator";
-import { ErrorMessage, Field, FieldArray, Form, Formik } from "formik";
+import React from 'react';
+import './App.css';
+import { Contact, Phone } from '@monorepo/common';
+import { createValidator } from 'class-validator-formik';
+import { validate } from 'class-validator';
+import { ErrorMessage, Field, FieldArray, Form, Formik } from 'formik';
 
 const contactDefaultValues = new Contact();
-contactDefaultValues.subject = "too small";
-contactDefaultValues.email = "an@email.com";
+contactDefaultValues.subject = 'too small';
+contactDefaultValues.email = 'an@email.com';
 
 function App() {
   const testValidator = () => {
     const c = new Contact();
 
-    c.subject = "too short";
-    c.email = "incorrect email";
+    c.subject = 'too short';
+    c.email = 'incorrect email';
 
     validate(c).then((errors) => {
       console.log(errors);
@@ -40,7 +40,7 @@ function App() {
           <Form>
             <p>
               This is a form using formik. Using the class defined using
-              class-validator as the validation schema{" "}
+              class-validator as the validation schema{' '}
             </p>
             <p>
               Phones are a nested array of objects with their own validation

@@ -24,7 +24,7 @@
     "declaration": true,
     "sourceMap": true,
     "removeComments": true,
-    "emitDecoratorMetadata": false,
+    "emitDecoratorMetadata": true,
     "baseUrl": "./",
     "experimentalDecorators": true
   },

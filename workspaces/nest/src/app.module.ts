@@ -3,7 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TodosModule } from './todos/todos.module';
-import { Todo } from './todos/entities/todo.entity';
+import { Todo } from '@monorepo/common';
 
 @Module({
   imports: [
